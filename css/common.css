@@ -1,0 +1,420 @@
+/* 版心 */
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+/* 宝马官方字体声明 */
+@font-face {
+    font-family: 'BMW';
+    src: url('../font/BMW.ttf');
+}
+/* 头部样式 */
+.header {
+	position: fixed;
+	height: 100px;
+	left: 50%;
+	margin-left: -600px;
+	border-bottom: 1px solid #ccc;
+}
+.fl {
+	float: left;
+}
+.fl ul li {
+	float: left;
+	height: 100px;
+	line-height: 100px;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.fl ul li:hover {
+	border-bottom: 4px solid #1C69D4;
+}
+.fl ul li a {
+	color: #fff;
+}
+.fr {
+	float: right;
+}
+.fr ul li {
+	float: left;
+	padding: 0 15px;
+	line-height: 96px;
+}
+.fr ul li:hover {
+	border-bottom: 4px solid #1C69D4;
+}
+.fr ul li a img {
+	height: 27px;
+	width: 25px;
+}
+/* logo部分 */
+.logo img{
+	position: fixed;
+	top: 0;
+	right: 250px;
+	height: 100px;
+	width: 90px;
+}
+
+/* 消息图标 */
+.news {
+	position: fixed;
+	right: 0;
+	top: 200px;
+	height: 40px;
+	width: 40px;
+	background: url(../images/chat.jpg);
+	cursor: pointer;
+}
+
+/* 焦点图 */
+.focus {
+	overflow: hidden;
+	width: 1680px;
+	height: 756px;
+	background: url(../images/focus.jpg);
+	margin: 0 auto;
+}
+/* 了解详情模块 */
+.container {
+	margin: 200px 0 0 85px;
+	width: 1428px;
+	height: 166px;
+}
+.container h3 {
+	font-weight: 300;
+	font-size: 45px;
+	font-family: 'BMW';
+}
+.container p {
+	font-size: 23px;
+	font-family: 'BMW';
+}
+.container a {
+	display: block;
+	width: 285px;
+	height: 50px;
+	margin-top: 10px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	background: #125FC7;
+}
+
+/* 事件按钮 */
+.button {
+	width: 165px;
+	height: 12px;
+	margin: 10px auto;
+}
+.button ul li {
+	float: left;
+	margin: 0 10px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: #b6b6b6;
+}
+.button ul li:hover {
+	background-color: #2568d9;
+}
+
+/* 车辆类型 */
+/* 导航一 */
+.model_nav {
+	height: 80px;
+	margin-top: 100px;
+	border-bottom: 1px solid #ccc;
+}
+.model_nav ul li {
+	float: left;
+	line-height: 76px;
+	padding: 0 20px;
+	font-size: 18px;
+	color: #ccc;
+}
+.model_nav ul li:first-child {
+	border-bottom: 4px solid #1C69D4;
+	color: #000000;
+}
+.model_nav ul li:active {
+	border-bottom: 4px solid #1C69D4;
+}
+/* 导航二 */
+.model_nav_fine {
+	height: 80px;
+	border-bottom: 1px solid #ccc;
+	/* background: pink; */
+}
+.model_nav_fine ul li {
+	float: left;
+	line-height: 76px;
+	padding: 0 20px;
+	font-size: 18px;
+	color: #ccc;
+	font-weight: 700;
+}
+.model_nav_fine ul li:first-child,.model_nav_fine ul li:last-child {
+	font-weight: 400;
+}
+.model_nav_fine ul li:nth-child(2) {
+	font-size: 30px;
+	color: #000000;
+	border-bottom: 4px solid #1C69D4;
+}
+.model_nav_fine ul li:active {
+	font-size: 30px;
+	color: #000000;
+	border-bottom: 4px solid #1C69D4;
+}
+
+/* 汽车系列 */
+.model_cars {
+	height: 300px;
+	margin-top: 30px;
+}
+.model_cars ul li {
+	float: left;
+	margin-right: 45px;
+	width: 285px;
+	height: 160px;
+}
+.model_cars ul li img {
+	width: 285px;
+	height: 160px;
+}
+.model_cars ul li h5 {
+	font-weight: 400;
+	font-family: 'BMW';
+	font-size: 18px;
+}
+.model_cars ul li p {
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #ccc;
+}
+.model_cars ul li a {
+	font-size: 14px;
+}
+.model_cars ul li a::before {
+	float: left;
+	content: '\e604';
+	font-family: "iconfont";
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 2px;
+}
+
+/* 车型介绍内容模块 */
+.content {
+	position: relative;
+	height: 548px;
+	padding: 0 7.5px;
+}
+.content::before {
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	font-size: 30px;
+	content: '\e602';
+	font-family: "iconfont";
+}
+.content::after {
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	font-size: 30px;
+	content: '\e604';
+	font-family: "iconfont";
+}
+.content .head {
+	height: 82px;
+	font-size: 25px;
+	line-height: 82px;
+}
+.conten_nav_item {
+	height: 28px;
+	border-bottom: 1px solid #ccc;
+}
+.conten_nav_item li {
+	float: left;
+	padding: 0 62px;
+	line-height: 24px;
+	font-family: 'BMW';
+	font-size: 14px;
+}
+.conten_nav_item li:hover {
+	border-bottom: 4px solid #1C69D4;
+}
+.conten_nav_item li:first-child {
+	border-bottom: 4px solid #1C69D4;
+}
+.content_bd {
+	height: 342px;
+	margin-top: 20px;
+}
+.content_bd .cars_img {
+	float: left;
+	width: 585px;
+	height: 320px;	
+}
+.content_bd .cars_info {
+	float: right;
+	width: 600px;
+	height: 171px;
+	padding: 0 15px;
+	font-size: 14px;
+}
+
+/* 盒子列表 */
+.list {
+	height: 1060px;
+	font-size: 14px;
+}
+.list ul li {
+	float: left;
+	width: 585px;
+	height: 440px;
+	margin: 0 7.5px 90px 7.5px;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+.list ul li img {
+	width: 553px;
+	height: 311px;
+}
+.list ul li h5 {
+	font-family: 'BMW';
+	font-size: 25px;
+	font-weight: 400;
+}
+.list ul li p {
+	margin-bottom: 12px;
+}
+.list ul li a::before {
+	content: '\e604';
+	font-family: "iconfont";
+	font-weight: 700;
+}
+
+/* BMW售后服务 */
+.list_other {
+	height: 368px;
+	font-size: 14px;
+}
+.list_other ul li {
+	float: left;
+	width: 285px;
+	height: 296px;
+	margin: 0 7.5px;
+	padding: 15px;
+	border: 1px solid #ccc;
+}
+.list_other ul li:first-child {
+	width: 285px;
+	height: 271px;
+}
+.list_other ul li img {
+	width: 253px;
+	height: 141px;
+}
+.list_other ul li h5 {
+	font-family: 'BMW';
+	font-size: 25px;
+	font-weight: 400;
+}
+.list_other ul li p {
+	margin-bottom: 12px;
+}
+.list_other ul li a::before {
+	content: '\e604';
+	font-family: "iconfont";
+	font-weight: 700;
+}
+
+/* 帮助模块 */
+.help {
+	height: 152px;
+	margin: 30px auto auto;
+}
+.help ul {
+	width: 1215px;
+}
+.help ul li {
+	float: left;
+	width: 228px;
+	height: 140px;
+	margin-right: 15px;
+	padding: 28.5px 20px;
+	background-color: #f2f2f2;
+}
+
+/* 页脚 */
+.footer {
+	height: 521px;
+	margin-top: 45px;
+}
+.links {
+	height: 435px;
+	background-color: #E6E6E6;
+	overflow: hidden;
+}
+.links_main {
+	margin-top: 106px;
+	height: 330px;
+	width: 1400px;
+	border-top: 1px solid #ccc;
+	padding: 45px 20px;
+}
+.links_main dl {
+	float: left;
+	margin-right: 140px;
+}
+.links_main dl dt a {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.links_main dl dd a {
+	color: #8e8e8e;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 700;
+}
+.links_main dl dd a:hover {
+	color: #000000;
+}
+
+/* 版权模块 */
+.copyright {
+	height: 86px;
+	padding: 30px 20px;
+}
+.copyright span {
+	display: block;
+	float: left;
+	font-size: 14px;
+}
+.copyright ul {
+	float: right;
+}
+.copyright ul li {
+	float: left;
+	margin: 0 10px;
+}
+.copyright ul li a {
+	font-size: 14px;
+}
+.copyright ul li a:hover {
+	color: #000000;
+	font-weight: 700;
+}
+.color_blue {
+	color: #1366D7;
+}
+
+
